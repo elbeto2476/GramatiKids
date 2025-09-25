@@ -1,0 +1,190 @@
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f8fd;
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra superior */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #2874d6;
+  padding: 1em 2em;
+  position: relative;
+}
+
+.main-btn {
+  background: #3ec9a7;
+  color: #fff;
+  border: none;
+  padding: 0.7em 2em;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(62,201,167,0.15);
+  transition: background 0.2s;
+}
+
+.main-btn:hover {
+  background: #2ea98a;
+}
+
+/* Círculo de usuario */
+.user-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 1em;
+  box-shadow: 0 2px 8px rgba(40,116,214,0.10);
+}
+
+.user-circle img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Panel flotante de usuario */
+.user-panel-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.25);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.user-panel {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(40,116,214,0.18);
+  padding: 2em 2em 1.5em 2em;
+  min-width: 320px;
+  max-width: 95vw;
+  text-align: left;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.user-panel-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2874d6;
+}
+
+.user-panel button {
+  width: 100%;
+  padding: 0.7em;
+  margin-top: 0.7em;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  background: #2874d6;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.user-panel button#closePanelBtn {
+  background: #ff6f61;
+  margin-top: 0.3em;
+}
+
+.user-panel h3 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #2874d6;
+}
+
+/* Título principal */
+.dashboar-header {
+  text-align: center;
+  margin: 2em 0 1em 0;
+}
+
+.dashboar-header h1 {
+  font-size: 2.2em;
+  color: #2874d6;
+  margin-bottom: 0.5em;
+}
+
+/* Tarjetas de funcionalidades */
+.dashboar-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 70vh;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 2em;
+  width: 90vw;
+  max-width: 1100px;
+  margin: 2em auto;
+}
+
+.feature-card {
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.feature-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.7em;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.feature-card ul {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.feature-card.blue    { border-left: 8px solid #2874d6; }
+.feature-card.purple  { border-left: 8px solid #8e6fd7; }
+.feature-card.green   { border-left: 8px solid #3ec9a7; }
+.feature-card.yellow  { border-left: 8px solid #ffd43b; }
+.feature-card.red     { border-left: 8px solid #ff6f61; }
+.feature-card.orange  { border-left: 8px solid #ffb347; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2em;
+  }
+}

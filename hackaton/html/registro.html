@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>EducaApp - Registro</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="registro-container">
+    <h1>Regístrate en EducaApp</h1>
+    <form id="registroForm">
+        <input type="number" id="newAge" placeholder="Edad" min="1" required />
+      <input type="text" id="newUsername" placeholder="Usuario" required />
+      <input type="password" id="newPassword" placeholder="Contraseña" required />
+      <input type="email" id="newEmail" placeholder="Correo" required />
+      <button type="submit">Registrarse</button>
+    </form>
+    <p id="registroError" class="error"></p>
+    <a href="login.html">¿Ya tienes cuenta? Inicia sesión</a>
+  </div>
+  <script src="/js/registro.js"></script>
+</body>
+</html>

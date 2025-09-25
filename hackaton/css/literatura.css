@@ -1,0 +1,74 @@
+/* Fondo azul decorativo */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #3498db; /* azul de fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor blanco centrado */
+.fondo-azul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-lectura {
+  background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Imagen decorativa */
+#lectura-imagen {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 24px auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+#lectura-titulo {
+  font-size: 2em;
+  margin-bottom: 16px;
+  color: #d35400;
+}
+
+/* Texto narrativo */
+#lectura-texto {
+  font-size: 1.4em;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  color: #5d4037;
+  padding: 0 20px;
+}
+
+/* Botón */
+#siguiente-btn {
+  padding: 12px 28px;
+  font-size: 1.1em;
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#siguiente-btn:hover {
+  background: #e67e22;
+}
